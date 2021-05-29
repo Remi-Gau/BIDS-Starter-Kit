@@ -11,34 +11,7 @@ and it should be in the repository.
 Ideally the questions will link to an answer elsewhere in the repository to
 maximise the different ways of finding out more about BIDS.
 
--   [General questions](#general-questions)
-
-    -   [What is a `json` file?](#what-is-a-json-file)
-    -   [What does [this word] mean?](#what-does-this-word-mean)
-    -   [How to specify the micro sign in Matlab?](#how-to-specify-the-micro-sign-in-matlab)
-    -   [Is your data type not covered in the current BIDS specification?](#is-your-data-type-not-covered-in-the-current-bids-specification)
-    -   [Can I import an Excel file with participants information?](#how-to-import-excel-files)
-
--   [MRI specific questions](#mri-specific-questions)
-    -   [How can I anonymize the structural image of my data set? What defacing tools can I use?](#what-defacing-tools-can-i-use)
--   [EEG specific questions](#eeg-specific-questions)
-
-    -   [How to format Hardware and Software filter fields in a .json?](#how-to-format-hardware-and-software-filter-fields-in-a-json)
-    -   [How to specify EEGReference and EEGGround for Biosemi referencing scheme?](#how-to-specify-eegreference-and-eegground-for-biosemi-referencing-scheme)
-    -   [How to specify units in microVolt?](#how-to-specify-units-in-microVolt)
-
--   [BIDS and NWB](#BIDS-NWB)
-
-    -   [Are BIDS and NWB compatible?](#are-bids-and-nwb-compatible)
-    -   [How to combine BIDS and NWB?](#how-to-combine-bids-and-nwb)
-
--   [Phenotypes](#Phenotypes)
-    -   [How to store subject phenotypes?](#how-to-store-subject-phenotypes)
-    -   [Is there a standard for epilepsy phenotypes?](#is-there-a-standard-for-epilepsy-phenotypes)
-
----
-
-# General questions
+## General questions
 
 ### What is a `json` file?
 
@@ -82,7 +55,20 @@ names and metadata where possible, but this gives a little extra flexibility.
 See these bids tools to import and export a participants.tsv file:
 [bids-matlab-tools](https://github.com/sccn/bids-matlab-tools/blob/master/bids_spreadsheet2participants.m)
 
-# MRI specific questions
+### I had to split the testing of one of my participants across 2 days, should I use 2 different session folders to organize the data of that participant?
+
+No. The `session` level in the BIDS folder hierarchy can be used to group data
+that go "logically" together: this means that you can put in the same `session`
+folder data that were acquired on different days, but that are "linked" to one
+another in a way that make sense to how you want to organize your data.
+
+If you want to keep track of what data was acquired when you can use the
+[`scans.tsv` files](https://bids-specification.readthedocs.io/en/stable/03-modality-agnostic-files.html#scans-file).
+
+For some examples, see this
+[issue in the bidsstater kit](https://github.com/bids-standard/bids-starter-kit/issues/193).
+
+## MRI specific questions
 
 ### What defacing tools can I use?
 
@@ -106,7 +92,7 @@ Otherwise you can also use:
 -   SPM8 and SPM12: when in the batch editor fo to --> SPM menu --> Util -->
     De-face
 
-# EEG specific questions
+## EEG specific questions
 
 ### How to format Hardware and Software filter fields in a .json?
 
@@ -150,7 +136,7 @@ BIDS requires physical units to be specified according to the SI unit symbol and
 possibly prefix symbol (e.g., mV, μV for milliVolt and microVolt). In Matlab use
 `native2unicode(181,'latin1')` to get the correct symbol for micro.
 
-# BIDS and NWB
+## BIDS and NWB
 
 ### Are BIDS and NWB compatible?
 
@@ -172,7 +158,7 @@ The same subject can have another session (CCC) with raw fMRI data in BIDS:
 /sub-AAA/ses-CCC/func/sub-AAA_ses-CCC_task-rest_bold.nii.gz
 ```
 
-# Phenotypes
+## Phenotypes
 
 ### How to store subject phenotypes?
 

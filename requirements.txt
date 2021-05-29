@@ -1,1 +1,5 @@
 miss_hit==0.9.20
+
+mkdocs>=1.1
+mkdocs-material>=5.4
+pymdown-extensions>=7.0.0

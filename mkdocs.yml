@@ -1,0 +1,28 @@
+site_name: BIDS starter kit
+
+theme:
+  name: null
+  custom_dir: 'cinder'
+  favicon: images/favicon.png
+  logo: images/logo.png
+
+extra_javascript:
+    - js/jquery-3.4.1.min.js
+
+markdown_extensions:
+    - toc:
+        anchorlink: true
+    - pymdownx.superfences
+
+plugins:
+    - search
+
+docs_dir: 'src'
+
+use_directory_urls: false
+
+nav:
+    - Home: index.md
+    - FAQ: FAQ.md
+
+
