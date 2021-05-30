@@ -41,6 +41,10 @@ easy! Welcome! :joy::raised_hands:
 
 ## Get in touch
 
+<!-- TODO
+- add link to contact page
+-->
+
 There are lots of ways to get in touch with the team maintaining the BIDS
 Starter Kit.
 

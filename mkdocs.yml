@@ -24,5 +24,6 @@ use_directory_urls: false
 nav:
     - Home: index.md
     - FAQ: FAQ.md
+    - Contact: contact.md
 
 
