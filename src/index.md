@@ -196,12 +196,11 @@ more valuable your feedback is** :thumbsup:
 BIDS**
 
 All publications are listed in our wiki:
-https://github.com/bids-standard/bids-starter-kit/wiki/Publications
+[https://github.com/bids-standard/bids-starter-kit/wiki/Publications](https://github.com/bids-standard/bids-starter-kit/wiki/Publications)
 
 You'll almost always want to cite the original paper:
 
-[The brain imaging data structure, a format for organizing and describing outputs of neuroimaging experiments](https://www.nature.com/articles/sdata201644)
-
+> [The brain imaging data structure, a format for organizing and describing outputs of neuroimaging experiments](https://www.nature.com/articles/sdata201644)
 > Scientific Data volume 3, Article number: 160044 (2016)
 
 ```bibtex
