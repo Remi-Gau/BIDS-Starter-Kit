@@ -1,8 +1,14 @@
 site_name: BIDS starter kit
 
 theme:
+  
+  # material
+#   name: material
+  
+  # cinder
   name: null
   custom_dir: 'cinder'
+
   favicon: images/favicon.png
   logo: images/logo.png
 
@@ -23,7 +29,19 @@ use_directory_urls: false
 
 nav:
     - Home: index.md
+    - Hierarchy:  
+        Folders: folders.md
+        Files: files.md
+    - Ressources:
+        Examples: examples.md
+        Videos: videos.md 
+        Tutorials: tutorials.md
+        Publications: publications.md
+        Links: links.md       
+    - Validator: validator.md
+    - BIDS-apps: apps.md
     - FAQ: FAQ.md
+    - Glossary: glossary.md
     - Contact: contact.md
 
 
