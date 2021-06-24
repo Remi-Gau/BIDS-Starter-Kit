@@ -1,3 +1,5 @@
+# Tutorials
+
 ## BIDS Tutorial Series:
 
 -   [Part 1a: Introductory Walkthrough](http://reproducibility.stanford.edu/bids-tutorial-series-part-1a/)

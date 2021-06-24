@@ -1,3 +1,16 @@
+---
+jupyter:
+  jupytext:
+    text_representation:
+    format_name: myst
+  kernelspec:
+    display_name: Python 3
+    language: python
+    name: python3
+  repository:
+      url: https://github.com/Remi-Gau/BIDS-Starter-Kit
+---
+
 <h1 align="center">Welcome to the BIDS Starter Kit</h1>
 
 <div align="center">
@@ -52,6 +65,8 @@
 
 </div>
 
+# BIDS starter kit
+
 ## Motivation
 
 The primary goal of this project is to simplify the process of learning about
@@ -98,14 +113,14 @@ be.
 
 ## Benefits
 
-#### For the public good
+### For the public good
 
 -   Lowers scientific waste
 -   Gives opportunity to less-funded researchers
 -   Improves efficiency
 -   Spurs innovation
 
-#### For yourself
+### For yourself
 
 -   You are likely the future user of the data and data analysis pipelines
     you’ve developed

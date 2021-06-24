@@ -1,3 +1,5 @@
+# BIDS apps
+
 ## What is a BIDS App?
 
 A [BIDS App](http://bids-apps.neuroimaging.io/) is an analysis pipeline that

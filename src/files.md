@@ -1,3 +1,5 @@
+# Files
+
 Metadata are stored in .json and .tsv files. These files are language-agnostic,
 meaning you can work with them in, e.g., Python, Matlab, or R. This page covers
 common ways to read/write these files in common languages for neuroscience

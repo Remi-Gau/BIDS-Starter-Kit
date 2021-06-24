@@ -1,3 +1,5 @@
+# Creating an iEEG BIDS dataset
+
 Here, we briefly describe the first steps in creating an iEEG dataset in BIDS
 format. The process can be summarized by the following main steps:
 
