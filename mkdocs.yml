@@ -32,10 +32,12 @@ nav:
     - Hierarchy:  
         Folders: folders.md
         Files: files.md
+    - Tutorials: 
+        iEEG: creating_iEEG_dataset.md
+        others: tutorials.md
     - Ressources:
         Examples: examples.md
         Videos: videos.md 
-        Tutorials: tutorials.md
         Publications: publications.md
         Links: links.md       
     - Validator: validator.md
