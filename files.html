@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    
+    <title>Files - BIDS starter kit</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="css/base.min.css" rel="stylesheet">
+    <link href="css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="index.html">BIDS starter kit</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="index.html">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hierarchy <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="folders.html">Folders</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="files.html">Files</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="creating_iEEG_dataset.html">iEEG</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="tutorials.html">others</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ressources <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="examples.html">Examples</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="videos.html">Videos</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="publications.html">Publications</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="links.html">Links</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="validator.html">Validator</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="apps.html">BIDS-apps</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="FAQ.html">FAQ</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="glossary.html">Glossary</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="contact.html">Contact</a>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="folders.html">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="creating_iEEG_dataset.html">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#json-files">JSON Files</a></li>
+            <li class="second-level"><a href="#online">Online</a></li>
+                
+            <li class="second-level"><a href="#matlab-octave">Matlab / Octave</a></li>
+                
+                <li class="third-level"><a href="#reading-a-json-file">Reading a .json file</a></li>
+                <li class="third-level"><a href="#writing-a-json-file">Writing a .json file</a></li>
+            <li class="second-level"><a href="#python">Python</a></li>
+                
+                <li class="third-level"><a href="#reading-a-json-file_1">Reading a .json file</a></li>
+                <li class="third-level"><a href="#writing-a-json-file_1">Writing a .json file</a></li>
+            <li class="second-level"><a href="#r">R</a></li>
+                
+                <li class="third-level"><a href="#installing-required-package">Installing required package</a></li>
+                <li class="third-level"><a href="#reading-a-json-file_2">Reading a .json file:</a></li>
+                <li class="third-level"><a href="#writing-a-json-file_2">Writing a .json file:</a></li>
+        <li class="first-level "><a href="#tsv-files">TSV files</a></li>
+            <li class="second-level"><a href="#matlab">Matlab</a></li>
+                
+                <li class="third-level"><a href="#reading-a-tsv-file">Reading a .tsv file:</a></li>
+                <li class="third-level"><a href="#writing-a-tsv-file">Writing a .tsv file:</a></li>
+            <li class="second-level"><a href="#python_1">Python</a></li>
+                
+                <li class="third-level"><a href="#reading-a-tsv-file_1">Reading a .tsv file</a></li>
+                <li class="third-level"><a href="#writing-a-tsv-file_1">Writing a .tsv file</a></li>
+            <li class="second-level"><a href="#excel">Excel</a></li>
+                
+            <li class="second-level"><a href="#r_1">R</a></li>
+                
+                <li class="third-level"><a href="#reading-a-tsv-file_2">Reading a .tsv file:</a></li>
+                <li class="third-level"><a href="#writing-a-tsv-file_2">Writing a .tsv file:</a></li>
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<p>Metadata are stored in .json and .tsv files. These files are language-agnostic,
+meaning you can work with them in, e.g., Python, Matlab, or R. This page covers
+common ways to read/write these files in common languages for neuroscience
+analysis. More extensive example templates for creating these BIDS metadata
+files can be found in the
+<a href="https://github.com/bids-standard/bids-starter-kit/tree/master/matlabCode">Matlab code templates</a>
+and
+<a href="https://github.com/bids-standard/bids-starter-kit/tree/master/pythonCode">Python code templates</a></p>
+<h1 id="json-files"><a class="toclink" href="#json-files">JSON Files</a></h1>
+<p>JSON files are text files that take the following structure:
+<code>{'key': 'value', 'key2': 'value2', 'key3': {'subkey1': 'subvalue1'}}</code>.</p>
+<p>Note that they can be nested (curly brackets within curly brackets). Here are
+some common ways to read / write these files.</p>
+<h2 id="online"><a class="toclink" href="#online">Online</a></h2>
+<p>To read/write JSON online, we recommend the following website:</p>
+<p><a href="http://jsoneditoronline.org/">http://jsoneditoronline.org/</a></p>
+<h2 id="matlab-octave"><a class="toclink" href="#matlab-octave">Matlab / Octave</a></h2>
+<p>There are many toolboxes in Matlab for reading / writing JSON files.</p>
+<p>Since MATLAB R2016b, you can use the built-in functions <code>jsonencode</code> (to write)
+and <code>jsondecode</code> (to read) JSON files. Hopefully they should be available in
+Octave 6.1 next year.</p>
+<p>The <a href="https://github.com/gllmflndn/JSONio">JSONio library</a> will allow you to read
+and write JSON files with matlab and octave (see examples below to use
+<code>jsonwrite</code> and <code>jsonread</code>).</p>
+<p>SPM12 uses the JSONio library by calling <code>spm_jsonwrite</code> and <code>spm_jsonread</code> and
+it has
+<a href="https://en.wikibooks.org/wiki/SPM/BIDS">other interesting functions to help you with BIDS</a>.</p>
+<p><a href="https://github.com/bids-standard/bids-matlab">bids-matlab</a> has 2 functions
+(<code>bids.util.jsonencode</code> and <code>bids.util.decode</code>) that act as wrappers and will
+use whatever implementation (SPM, JSONio, MATLAB) is available.</p>
+<p>The examples below are for the
+<a href="https://github.com/gllmflndn/JSONio">JSONio library</a>:</p>
+<h3 id="reading-a-json-file"><a class="toclink" href="#reading-a-json-file">Reading a <code>.json</code> file</a></h3>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="n">jsonread</span><span class="p">([</span><span class="n">filename</span><span class="p">])</span><span class="w"></span>
+</code></pre></div>
+<h3 id="writing-a-json-file"><a class="toclink" href="#writing-a-json-file">Writing a <code>.json</code> file</a></h3>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="n">root_dir</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&#39;./&#39;</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">project</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&#39;temp&#39;</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">sub_id</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&#39;01&#39;</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">ses_id</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&#39;01&#39;</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">acquisition</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&#39;anat&#39;</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">anat_json_name</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nb">fullfile</span><span class="p">(</span><span class="n">root_dir</span><span class="p">,</span><span class="n">project</span><span class="p">,</span><span class="k">...</span><span class="w"></span>
+<span class="w">        </span><span class="p">[</span><span class="s">&#39;sub-&#39;</span><span class="w"> </span><span class="n">sub_id</span><span class="p">],</span><span class="k">...</span><span class="w"></span>
+<span class="w">        </span><span class="p">[</span><span class="s">&#39;ses-&#39;</span><span class="w"> </span><span class="n">ses_id</span><span class="p">],</span><span class="k">...</span><span class="w"></span>
+<span class="w">        </span><span class="n">acquisition</span><span class="p">,</span><span class="k">...</span><span class="w"></span>
+<span class="w">        </span><span class="p">[</span><span class="s">&#39;sub-&#39;</span><span class="w"> </span><span class="n">sub_id</span><span class="w"> </span><span class="s">&#39;_ses-&#39;</span><span class="w"> </span><span class="n">ses_id</span><span class="w"> </span><span class="s">&#39;_T1W.json&#39;</span><span class="p">]);</span><span class="w"></span>
+
+<span class="w">    </span><span class="c">% Assign the fields in the Matlab structure that can be saved as a json:</span><span class="w"></span>
+<span class="w">    </span><span class="n">anat_json</span><span class="p">.</span><span class="n">Manufacturer</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&#39;GE&#39;</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">anat_json</span><span class="p">.</span><span class="n">ManufacturersModelName</span><span class="w"> </span><span class="p">=</span><span class="w">  </span><span class="s">&#39;Discovery MR750&#39;</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">anat_json</span><span class="p">.</span><span class="n">MagneticFieldStrength</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">anat_json</span><span class="p">.</span><span class="n">PulseSequence</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&#39;T1 weighted SPGR&#39;</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">json_options</span><span class="p">.</span><span class="n">indent</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&#39;    &#39;</span><span class="p">;</span><span class="w"> </span><span class="c">% this makes the json look pretier when opened in a txt editor</span><span class="w"></span>
+<span class="w">    </span><span class="n">jsonwrite</span><span class="p">(</span><span class="n">loc_json_name</span><span class="p">,</span><span class="n">anat_json</span><span class="p">,</span><span class="n">json_options</span><span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<h2 id="python"><a class="toclink" href="#python">Python</a></h2>
+<p>In Python, JSON support is built into the core library, meaning you don't need
+to install anything to read/write JSON files. In addition, the structure of JSON
+is almost identical to that of Python dictionaries (assuming you are only
+storing text / numbers in the dictionary). To that extent.</p>
+<h3 id="reading-a-json-file_1"><a class="toclink" href="#reading-a-json-file_1">Reading a <code>.json</code> file</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">json</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;myfile.json&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">ff</span><span class="p">:</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">ff</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="writing-a-json-file_1"><a class="toclink" href="#writing-a-json-file_1">Writing a <code>.json</code> file</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">json</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;field1&#39;</span><span class="p">:</span> <span class="s1">&#39;value1&#39;</span><span class="p">,</span> <span class="s1">&#39;field2&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;field3&#39;</span><span class="p">:</span> <span class="s1">&#39;field3&#39;</span><span class="p">}</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;my_output_file.json&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">ff</span><span class="p">:</span>
+    <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">ff</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="r"><a class="toclink" href="#r">R</a></h2>
+<p>There are several packages for reading and writing JSON files from R. In this
+example, we will be using jsonlite. Remember to install and call a package
+before using it.</p>
+<p>https://github.com/jeroen/jsonlite</p>
+<h3 id="installing-required-package"><a class="toclink" href="#installing-required-package">Installing required package</a></h3>
+<div class="highlight"><pre><span></span><code>    <span class="nf">install.packages</span><span class="p">(</span><span class="s">&#39;jsonlite&#39;</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="reading-a-json-file_2"><a class="toclink" href="#reading-a-json-file_2">Reading a <code>.json</code> file:</a></h3>
+<div class="highlight"><pre><span></span><code>    <span class="nf">library</span><span class="p">(</span><span class="n">jsonlite</span><span class="p">)</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="nf">fromJSON</span><span class="p">(</span><span class="s">&#39;myfile.json&#39;</span><span class="p">,</span> <span class="n">pretty</span><span class="o">=</span><span class="kc">TRUE</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="writing-a-json-file_2"><a class="toclink" href="#writing-a-json-file_2">Writing a <code>.json</code> file:</a></h3>
+<div class="highlight"><pre><span></span><code>    <span class="nf">library</span><span class="p">(</span><span class="n">jsonlite</span><span class="p">)</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="s">&#39;{&quot;field1&quot;: &quot;value1&quot;, &quot;field2&quot;: 3, &quot;field3&quot;: &quot;field3&quot;}&#39;</span>
+    <span class="nf">writeLines</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="s">&quot;myData.json&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h1 id="tsv-files"><a class="toclink" href="#tsv-files">TSV files</a></h1>
+<p>A Tab-Separate Values (TSV) file is a text file where tab characters (<code>\t</code>)
+separate fields that are in the file. It is structured as a table, with each
+column representing a field of interest, and each row representing a single
+datapoint.</p>
+<p>Below are ways to read / write TSV files in common languages.</p>
+<h2 id="matlab"><a class="toclink" href="#matlab">Matlab</a></h2>
+<h3 id="reading-a-tsv-file"><a class="toclink" href="#reading-a-tsv-file">Reading a <code>.tsv</code> file:</a></h3>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nb">readtable</span><span class="p">([</span><span class="n">filename</span><span class="p">],</span><span class="s">&#39;FileType&#39;</span><span class="p">,</span><span class="s">&#39;text&#39;</span><span class="p">,</span><span class="s">&#39;Delimiter&#39;</span><span class="p">,</span><span class="s">&#39;\t&#39;</span><span class="p">,</span><span class="s">&#39;TreatAsEmpty&#39;</span><span class="p">,{</span><span class="s">&#39;N/A&#39;</span><span class="p">,</span><span class="s">&#39;n/a&#39;</span><span class="p">});</span><span class="w"></span>
+</code></pre></div>
+<h3 id="writing-a-tsv-file"><a class="toclink" href="#writing-a-tsv-file">Writing a <code>.tsv</code> file:</a></h3>
+<h4 id="matlab_1"><a class="toclink" href="#matlab_1">Matlab</a></h4>
+<div class="highlight"><pre><span></span><code>root_dir = &#39;MyRootDir&#39;;
+bidsProject = &#39;temp&#39;;
+bids_particpants_name = [&#39;participants.tsv&#39;];
+
+participant_id = [&#39;sub-01&#39;; &#39;sub-02&#39;]; % onsets in seconds
+age = [20 30]&#39;;
+sex = [&#39;m&#39;;&#39;f&#39;];
+
+t = table(participant_id,age,sex);
+writetable(t,fullfile(root_dir,bidsProject,bids_particpants_name),&#39;FileType&#39;,&#39;text&#39;,&#39;Delimiter&#39;,&#39;\t&#39;);
+</code></pre></div>
+<h4 id="octave"><a class="toclink" href="#octave">Octave</a></h4>
+<p>The <code>writetable</code> function is not implemented in older version of Octave (e.g
+4.2.2) and the <code>table</code> function differs from its matlab counterpart. These are
+still in development for future
+<a href="https://github.com/apjanke/octave-tablicious">releases</a> so some of the scripts
+provided in the BIDS starter-kit repository in the matlab code folder to create
+.tsv might not work with octave because of that reason.</p>
+<h2 id="python_1"><a class="toclink" href="#python_1">Python</a></h2>
+<p>In Python, the easiest way to work with TSV files is to use the Pandas library.
+This provides a high-level structure to organize, manipulate, clean, and
+visualize tabular data. You can install <code>pandas</code> with the following command:</p>
+<p><code>pip install pandas</code></p>
+<h3 id="reading-a-tsv-file_1"><a class="toclink" href="#reading-a-tsv-file_1">Reading a <code>.tsv</code> file</a></h3>
+<p>There are many ways to read a <code>.tsv</code> file in Pandas. One option is the
+following:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;./ds001/participants.tsv&#39;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">)</span>
+</code></pre></div>
+<p>Note that this function will default to using <code>,</code> as a delimiter, so we
+explicitly give it the tab character.</p>
+<h3 id="writing-a-tsv-file_1"><a class="toclink" href="#writing-a-tsv-file_1">Writing a <code>.tsv</code> file</a></h3>
+<p>You can write to a <code>.tsv</code> file using the <code>to_csv</code> method of a pandas DataFrame:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;./ds001/participants.tsv&#39;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">)</span>
+
+<span class="c1"># Add an extra column for demonstration</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;subject_id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">))</span>
+
+<span class="c1"># Show contents of the dataframe</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+    <span class="n">Out</span><span class="p">:</span>
+          <span class="n">participant_id</span> <span class="n">sex</span>  <span class="n">age</span>  <span class="n">subject_id</span>
+    <span class="mi">0</span>         <span class="n">sub</span><span class="o">-</span><span class="mi">01</span>   <span class="n">F</span>   <span class="mi">26</span>           <span class="mi">0</span>
+    <span class="mi">1</span>         <span class="n">sub</span><span class="o">-</span><span class="mi">02</span>   <span class="n">M</span>   <span class="mi">24</span>           <span class="mi">1</span>
+    <span class="mi">2</span>         <span class="n">sub</span><span class="o">-</span><span class="mi">03</span>   <span class="n">F</span>   <span class="mi">27</span>           <span class="mi">2</span>
+    <span class="mi">3</span>         <span class="n">sub</span><span class="o">-</span><span class="mi">04</span>   <span class="n">F</span>   <span class="mi">20</span>           <span class="mi">3</span>
+    <span class="mi">4</span>         <span class="n">sub</span><span class="o">-</span><span class="mi">05</span>   <span class="n">M</span>   <span class="mi">22</span>           <span class="mi">4</span>
+
+<span class="c1"># Save as a CSV file</span>
+<span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;my_new_file.csv&#39;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="excel"><a class="toclink" href="#excel">Excel</a></h2>
+<ul>
+<li>Create a file with the following columns (at least, for other values see
+    paragraph 8.11 in
+    <a href="http://bids.neuroimaging.io/bids_spec1.0.2.pdf">BIDS spec 1.0.2</a>)<ul>
+<li>participant_id</li>
+<li>age</li>
+<li>sex</li>
+</ul>
+</li>
+<li>Save as tab separated <code>.txt</code> and change extension to <code>.tsv</code></li>
+</ul>
+<h2 id="r_1"><a class="toclink" href="#r_1">R</a></h2>
+<p>Reading and writing tab separated files comes natively in R, no need for extra
+packages.</p>
+<h3 id="reading-a-tsv-file_2"><a class="toclink" href="#reading-a-tsv-file_2">Reading a <code>.tsv</code> file:</a></h3>
+<p>In this example, we assume the .tsv includes column names (headers), and
+explicitly set column separator (delimitor) to tab ('\t')</p>
+<div class="highlight"><pre><span></span><code>data = read.table(&#39;myFile.tsv&#39;, header=TRUE, sep=&#39;\t&#39;)
+</code></pre></div>
+<h3 id="writing-a-tsv-file_2"><a class="toclink" href="#writing-a-tsv-file_2">Writing a <code>.tsv</code> file:</a></h3>
+<p>When writing files, column and row names are always saved, we remove row names,
+and quotes from the outpur explicitly by setting them to FALSE.</p>
+<div class="highlight"><pre><span></span><code><span class="n">data</span> <span class="o">=</span> <span class="nf">cbind.data.frame</span><span class="p">(</span>
+  <span class="n">participant_id</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">&#39;sub-01&#39;</span><span class="p">,</span> <span class="s">&#39;sub-02&#39;</span><span class="p">),</span>
+  <span class="n">age</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="m">20</span><span class="p">,</span><span class="m">30</span><span class="p">),</span>
+  <span class="n">sex</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">&#39;m&#39;</span><span class="p">,</span><span class="s">&#39;f&#39;</span><span class="p">))</span>
+
+<span class="nf">write.table</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="s">&#39;myData.tsv&#39;</span><span class="p">,</span><span class="n">sep</span><span class="o">=</span><span class="s">&#39;\t&#39;</span><span class="p">,</span>
+  <span class="n">row.names</span> <span class="o">=</span> <span class="kc">FALSE</span><span class="p">,</span> <span class="n">quote</span> <span class="o">=</span> <span class="kc">FALSE</span><span class="p">)</span>
+</code></pre></div></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "."</script>
+    
+    <script src="js/base.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

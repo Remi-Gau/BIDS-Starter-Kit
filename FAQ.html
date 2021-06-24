@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    
+    <title>FAQ - BIDS starter kit</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="css/base.min.css" rel="stylesheet">
+    <link href="css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="index.html">BIDS starter kit</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="index.html">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hierarchy <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="folders.html">Folders</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="files.html">Files</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="creating_iEEG_dataset.html">iEEG</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="tutorials.html">others</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ressources <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="examples.html">Examples</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="videos.html">Videos</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="publications.html">Publications</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="links.html">Links</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="validator.html">Validator</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="apps.html">BIDS-apps</a>
+                    </li>
+                
+                
+                
+                    <li class="active">
+                        <a href="FAQ.html">FAQ</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="glossary.html">Glossary</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="contact.html">Contact</a>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="apps.html">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="glossary.html">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#frequently-asked-questions">Frequently Asked Questions</a></li>
+            <li class="second-level"><a href="#general-questions">General questions</a></li>
+                
+                <li class="third-level"><a href="#what-is-a-json-file">What is a json file?</a></li>
+                <li class="third-level"><a href="#what-does-this-word-mean">What does [this word] mean?</a></li>
+                <li class="third-level"><a href="#how-to-specify-the-micro-sign-in-matlab">How to specify the micro sign in Matlab?</a></li>
+                <li class="third-level"><a href="#is-your-data-type-not-covered-in-the-current-bids-specification">Is your data type not covered in the current BIDS specification?</a></li>
+                <li class="third-level"><a href="#how-to-import-excel-files">How to import Excel files?</a></li>
+                <li class="third-level"><a href="#i-had-to-split-the-testing-of-one-of-my-participants-across-2-days-should-i-use-2-different-session-folders-to-organize-the-data-of-that-participant">I had to split the testing of one of my participants across 2 days, should I use 2 different session folders to organize the data of that participant?</a></li>
+            <li class="second-level"><a href="#mri-specific-questions">MRI specific questions</a></li>
+                
+                <li class="third-level"><a href="#what-defacing-tools-can-i-use">What defacing tools can I use?</a></li>
+            <li class="second-level"><a href="#eeg-specific-questions">EEG specific questions</a></li>
+                
+                <li class="third-level"><a href="#how-to-format-hardware-and-software-filter-fields-in-a-json">How to format Hardware and Software filter fields in a .json?</a></li>
+                <li class="third-level"><a href="#how-to-specify-eegreference-and-eegground-for-biosemi-referencing-scheme">How to specify EEGReference and EEGGround for Biosemi referencing scheme?</a></li>
+                <li class="third-level"><a href="#how-to-specify-units-in-microvolt">How to specify units in microVolt?</a></li>
+            <li class="second-level"><a href="#bids-and-nwb">BIDS and NWB</a></li>
+                
+                <li class="third-level"><a href="#are-bids-and-nwb-compatible">Are BIDS and NWB compatible?</a></li>
+                <li class="third-level"><a href="#how-to-combine-bids-and-nwb">How to combine BIDS and NWB?</a></li>
+            <li class="second-level"><a href="#phenotypes">Phenotypes</a></li>
+                
+                <li class="third-level"><a href="#how-to-store-subject-phenotypes">How to store subject phenotypes?</a></li>
+                <li class="third-level"><a href="#is-there-a-standard-for-epilepsy-phenotypes">Is there a standard for epilepsy phenotypes?</a></li>
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="frequently-asked-questions"><a class="toclink" href="#frequently-asked-questions">Frequently Asked Questions</a></h1>
+<p>As this wiki grows it gets harder to know where to find information, so this
+page is a collection of frequently asked questions.</p>
+<p>Please add to this list! It will always be :construction: <strong>in construction</strong>
+:construction: and we really encourage everyone to update it to be more useful.
+If there's a question you've asked or answered more than twice then it's an FAQ
+and it should be in the repository.</p>
+<p>Ideally the questions will link to an answer elsewhere in the repository to
+maximise the different ways of finding out more about BIDS.</p>
+<h2 id="general-questions"><a class="toclink" href="#general-questions">General questions</a></h2>
+<h3 id="what-is-a-json-file"><a class="toclink" href="#what-is-a-json-file">What is a <code>json</code> file?</a></h3>
+<p>You can find more information about <code>json</code> (and <code>tsv</code>) files in the
+<a href="https://github.com/bids-standard/bids-starter-kit/wiki/Metadata-file-formats">Metadata-file-formats</a>
+page of this wiki.</p>
+<h3 id="what-does-this-word-mean"><a class="toclink" href="#what-does-this-word-mean">What does [this word] mean?</a></h3>
+<p>We're building a glossary to de-jargonise some of the terms you need to know to
+work with data in BIDS format. Check it out at
+<a href="https://github.com/bids-standard/bids-starter-kit/wiki/Glossary">https://github.com/bids-standard/bids-starter-kit/wiki/Glossary</a>.</p>
+<h3 id="how-to-specify-the-micro-sign-in-matlab"><a class="toclink" href="#how-to-specify-the-micro-sign-in-matlab">How to specify the micro sign in Matlab?</a></h3>
+<p>The symbol used to indicate µ has unicode U+00B5, which is in Matlab char(181).</p>
+<h3 id="is-your-data-type-not-covered-in-the-current-bids-specification"><a class="toclink" href="#is-your-data-type-not-covered-in-the-current-bids-specification">Is your data type not covered in the current BIDS specification?</a></h3>
+<p>BIDS extensions proposals
+<a href="https://bids.neuroimaging.io/get_involved.html#extending-the-bids-specification">(BEPs)</a>
+aim to extend the BIDS specification to new data types. A list of extensions
+proposals can be found <a href="https://bids.neuroimaging.io/">on the main BIDS webpage</a>
+under
+<a href="https://bids.neuroimaging.io/get_involved.html#extending-the-bids-specification">Get Involved</a>.
+Guidelines for contributing to these extensions or starting your own can be
+found in the
+<a href="https://docs.google.com/document/d/1pWmEEY-1-WuwBPNy5tDAxVJYQ9Een4hZJM06tQZg8X4/edit">BIDS Extension Proposals Guide</a>.</p>
+<p>If only part of your data is covered under BIDS, an option to allow additional
+files currently not covered in BIDS to pass the validator is the
+<a href="https://github.com/bids-standard/bids-validator#bidsignore">.bidsignore</a> file,
+which works just like <a href="https://git-scm.com/docs/gitignore">.gitignore</a>. It
+allows you to list all the files (or directories, with wildcards) that are not
+BIDS compliant and should be ignored by the validator. Of course you should
+still try to adhere to upcoming BEPs and the general BIDS philosophy for file
+names and metadata where possible, but this gives a little extra flexibility.</p>
+<h3 id="how-to-import-excel-files"><a class="toclink" href="#how-to-import-excel-files">How to import Excel files?</a></h3>
+<p>See these bids tools to import and export a participants.tsv file:
+<a href="https://github.com/sccn/bids-matlab-tools/blob/master/bids_spreadsheet2participants.m">bids-matlab-tools</a></p>
+<h3 id="i-had-to-split-the-testing-of-one-of-my-participants-across-2-days-should-i-use-2-different-session-folders-to-organize-the-data-of-that-participant"><a class="toclink" href="#i-had-to-split-the-testing-of-one-of-my-participants-across-2-days-should-i-use-2-different-session-folders-to-organize-the-data-of-that-participant">I had to split the testing of one of my participants across 2 days, should I use 2 different session folders to organize the data of that participant?</a></h3>
+<p>No. The <code>session</code> level in the BIDS folder hierarchy can be used to group data
+that go "logically" together: this means that you can put in the same <code>session</code>
+folder data that were acquired on different days, but that are "linked" to one
+another in a way that make sense to how you want to organize your data.</p>
+<p>If you want to keep track of what data was acquired when you can use the
+<a href="https://bids-specification.readthedocs.io/en/stable/03-modality-agnostic-files.html#scans-file"><code>scans.tsv</code> files</a>.</p>
+<p>For some examples, see this
+<a href="https://github.com/bids-standard/bids-starter-kit/issues/193">issue in the bidsstater kit</a>.</p>
+<h2 id="mri-specific-questions"><a class="toclink" href="#mri-specific-questions">MRI specific questions</a></h2>
+<h3 id="what-defacing-tools-can-i-use"><a class="toclink" href="#what-defacing-tools-can-i-use">What defacing tools can I use?</a></h3>
+<p>If you want to share your BIDS data set, chances are that you will have to
+anonymize it and therefore prevent identification of the participants from their
+anatomical scans. You will need to de-identification (or deface) the anatomical
+images. There are several options to do that</p>
+<ul>
+<li>If you already have a valid BIDS data set you can simply use the
+    <a href="https://github.com/PeerHerholz/BIDSonym">BIDSonym BIDS app</a> on it. To do
+    that it relies on several tools that you can also use before you have
+    finalized your BIDS data set<ul>
+<li><a href="https://github.com/poldracklab/pydeface">Pydeface</a></li>
+<li><a href="https://surfer.nmr.mgh.harvard.edu/fswiki/mri_deface">MRI deface</a></li>
+<li><a href="https://github.com/nipy/quickshear">Quickshear</a></li>
+</ul>
+</li>
+</ul>
+<p>Otherwise you can also use:</p>
+<ul>
+<li><a href="http://www.fieldtriptoolbox.org/faq/how_can_i_anonymize_an_anatomical_mri/">Fieldtrip</a>
+    under matlab can do it.</li>
+<li>SPM8 and SPM12: when in the batch editor fo to --&gt; SPM menu --&gt; Util --&gt;
+    De-face</li>
+</ul>
+<h2 id="eeg-specific-questions"><a class="toclink" href="#eeg-specific-questions">EEG specific questions</a></h2>
+<h3 id="how-to-format-hardware-and-software-filter-fields-in-a-json"><a class="toclink" href="#how-to-format-hardware-and-software-filter-fields-in-a-json">How to format Hardware and Software filter fields in a .json?</a></h3>
+<p>In the modality specific sidecar file <code>_eeg.json</code>, we can specify the software
+and hardware filters that were applied during the collection or processing of
+the data. Generally, there are two accepted formats for that:</p>
+<ol>
+<li>a string containing <code>"n/a"</code>, to show that no filter was used or the
+   information on the filter is not available.</li>
+<li>a json object containing one object per filter. This filter-specific object
+   contains key-value pairs to describe filter parameters. As per BIDS, all
+   frequencies SHOULD be in Hz. For example a single hardware filter could be
+   specified as:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;HardwareFilters&quot;</span><span class="p">:</span> <span class="p">{</span><span class="nt">&quot;HighpassFilter&quot;</span><span class="p">:</span> <span class="p">{</span><span class="nt">&quot;CutoffFrequency&quot;</span><span class="p">:</span> <span class="mf">0.1</span><span class="p">}}</span>
+</code></pre></div>
+<p>For a formatted example on how to deal with this in the BIDS context, please see
+this
+<a href="https://github.com/bids-standard/bids-starter-kit/blob/master/templates/sub-01/ses-01/eeg/sub-01_ses-01_task-FilterExample_eeg.json">template</a>.</p>
+<h3 id="how-to-specify-eegreference-and-eegground-for-biosemi-referencing-scheme"><a class="toclink" href="#how-to-specify-eegreference-and-eegground-for-biosemi-referencing-scheme">How to specify EEGReference and EEGGround for Biosemi referencing scheme?</a></h3>
+<p>Reference and ground electrodes for EEG data can usually be specified using the
+<code>EEGReference</code> and <code>EEGGround</code> fields in the modality specific sidecar file
+<code>_eeg.json</code>. Both fields accept a string value such as <code>"Placed on Cz"</code>.</p>
+<p>However, some manufacturers use special referencing schemes such as the
+combination of a "Common Mode Sense" (CMS) and a "Driven Right Leg" (DRL)
+electrode. This is the case for Biosemi, as further documented on
+<a href="https://www.biosemi.com/faq/cms&amp;drl.htm">their website</a>.</p>
+<p>For a formatted example on how to deal with this in the BIDS context, please see
+this
+<a href="https://github.com/bids-standard/bids-starter-kit/blob/master/templates/sub-01/ses-01/eeg/sub-01_ses-01_task-ReferenceExample_eeg.json">template</a>.</p>
+<h3 id="how-to-specify-units-in-microvolt"><a class="toclink" href="#how-to-specify-units-in-microvolt">How to specify units in microVolt?</a></h3>
+<p>BIDS requires physical units to be specified according to the SI unit symbol and
+possibly prefix symbol (e.g., mV, μV for milliVolt and microVolt). In Matlab use
+<code>native2unicode(181,'latin1')</code> to get the correct symbol for micro.</p>
+<h2 id="bids-and-nwb"><a class="toclink" href="#bids-and-nwb">BIDS and NWB</a></h2>
+<h3 id="are-bids-and-nwb-compatible"><a class="toclink" href="#are-bids-and-nwb-compatible">Are BIDS and NWB compatible?</a></h3>
+<p>Yes, BIDS and NWB are compatible.</p>
+<h3 id="how-to-combine-bids-and-nwb"><a class="toclink" href="#how-to-combine-bids-and-nwb">How to combine BIDS and NWB?</a></h3>
+<p>An NWB data file is an allowed format in the iEEG-BIDS data structure. This
+means that one subject (AAA) with a session (BBB) can have a BIDS folder with
+raw iEEG data in NWB format:</p>
+<div class="highlight"><pre><span></span><code>/sub-AAA/ses-BBB/ieeg/sub-AAA_ses-BBB_task-rest_ieeg.nwb
+</code></pre></div>
+<p>The same subject can have another session (CCC) with raw fMRI data in BIDS:</p>
+<div class="highlight"><pre><span></span><code>/sub-AAA/ses-CCC/func/sub-AAA_ses-CCC_task-rest_bold.nii.gz
+</code></pre></div>
+<h2 id="phenotypes"><a class="toclink" href="#phenotypes">Phenotypes</a></h2>
+<h3 id="how-to-store-subject-phenotypes"><a class="toclink" href="#how-to-store-subject-phenotypes">How to store subject phenotypes?</a></h3>
+<p>In the phenotype folder, according to the details provided for
+<a href="https://bids-specification.readthedocs.io/en/stable/03-modality-agnostic-files.html#phenotypic-and-assessment-data">phenotypes</a>:
+<code>bids-root/phenotype</code></p>
+<h3 id="is-there-a-standard-for-epilepsy-phenotypes"><a class="toclink" href="#is-there-a-standard-for-epilepsy-phenotypes">Is there a standard for epilepsy phenotypes?</a></h3>
+<p>Yes, open this
+<a href="https://github.com/bids-standard/bids-starter-kit/blob/master/interactiveTreeVisualization/epilepsyClassification2017/tree.html">epilepsyClassification2017</a>
+and follow the examples in the
+<a href="https://github.com/bids-standard/bids-starter-kit/tree/master/templates/phenotype">phenotype templates</a>.</p></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "."</script>
+    
+    <script src="js/base.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

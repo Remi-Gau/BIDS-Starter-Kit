@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    
+    <title>Validator - BIDS starter kit</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="css/base.min.css" rel="stylesheet">
+    <link href="css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="index.html">BIDS starter kit</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="index.html">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hierarchy <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="folders.html">Folders</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="files.html">Files</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="creating_iEEG_dataset.html">iEEG</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="tutorials.html">others</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ressources <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="examples.html">Examples</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="videos.html">Videos</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="publications.html">Publications</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="links.html">Links</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="active">
+                        <a href="validator.html">Validator</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="apps.html">BIDS-apps</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="FAQ.html">FAQ</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="glossary.html">Glossary</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="contact.html">Contact</a>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="links.html">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="apps.html">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#how-to-use">How to use</a></li>
+            <li class="second-level"><a href="#browser-version">Browser Version</a></li>
+                
+                <li class="third-level"><a href="#types-of-feedback">Types of Feedback</a></li>
+            <li class="second-level"><a href="#command-line-version">Command Line Version</a></li>
+                
+                <li class="third-level"><a href="#verifying-a-bids-compliant-data-set">Verifying a BIDS compliant data set</a></li>
+                <li class="third-level"><a href="#types-of-feedback_1">Types of Feedback</a></li>
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<p>The <a href="https://github.com/bids-standard/bids-validator">BIDS Validator</a> is a tool
+that checks if a dataset is compliant with the BIDS standard. The validator is
+available for use within several different environments to best suit individual
+user preferences and use cases, those versions are:</p>
+<ul>
+<li>A web browser based version</li>
+<li>Command line version</li>
+<li>Docker based version</li>
+<li>A python library installable via pip</li>
+</ul>
+<p>Instructions to install and use these versions can be found within the
+<a href="https://github.com/bids-standard/bids-validator#quickstart">quickstart guide</a>
+at the BIDS Validator repository.</p>
+<p><strong>Data Privacy and Confidentiality</strong></p>
+<p>Please note that the web app is entirely browser(not server) based. As such,
+there is no file uploading as part of the validation.</p>
+<h1 id="how-to-use"><a class="toclink" href="#how-to-use">How to use</a></h1>
+<h2 id="browser-version"><a class="toclink" href="#browser-version">Browser Version</a></h2>
+<ol>
+<li>The BIDS Validator can be found at
+   http://bids-standard.github.io/bids-validator/. It requires that you use the
+   Chrome or Firefox browser, since those are the only ones in which you can
+   select a whole folder rather than individual files.</li>
+</ol>
+<p><img alt="home" src="https://i.imgur.com/YD38eTE.png" /></p>
+<ol>
+<li>You can then choose the <strong>folder</strong> that you wish to validate</li>
+</ol>
+<h3 id="types-of-feedback"><a class="toclink" href="#types-of-feedback">Types of Feedback</a></h3>
+<h4 id="error"><a class="toclink" href="#error">Error</a></h4>
+<p>This response indicates that your dataset is not BIDS compliant. Try following
+the suggestions listed to make the appropriate corrections</p>
+<p><img alt="Error" src="https://i.imgur.com/PEz9hbd.png" /></p>
+<h4 id="warning"><a class="toclink" href="#warning">Warning</a></h4>
+<p>This response indicates that your dataset is BIDS compliant, but there are some
+non-critical problems (such as optional fields missing, or differences between
+participants)</p>
+<p><img alt="Warning" src="https://i.imgur.com/Gqwc1q9.png" /></p>
+<h4 id="success"><a class="toclink" href="#success">Success</a></h4>
+<p>This response indicates that your folder contains a valid BIDS Dataset!</p>
+<p><img alt="Valid" src="https://i.imgur.com/DPFVXOR.png" /></p>
+<h2 id="command-line-version"><a class="toclink" href="#command-line-version">Command Line Version</a></h2>
+<h3 id="verifying-a-bids-compliant-data-set"><a class="toclink" href="#verifying-a-bids-compliant-data-set">Verifying a BIDS compliant data set</a></h3>
+<p>After
+<a href="https://github.com/bids-standard/bids-validator#quickstart">installation with npm</a>
+using the CLI is trivial. Locate a bids data set similar to the one below:</p>
+<div class="highlight"><pre><span></span><code>user@host:~/bids-examples$ tree sub001/
+sub001/
+├── dataset_description.json
+├── participants.json
+├── participants.tsv
+├── README
+└── sub-01
+    ├── ses-baseline
+    │   ├── anat
+    │   │   ├── sub-01_ses-baseline_T1w.json
+    │   │   └── sub-01_ses-baseline_T1w.nii.gz
+    │   └── pet
+    │       ├── sub-01_ses-baseline_pet.json
+    │       └── sub-01_ses-baseline_pet.nii.gz
+    └── ses-intervention
+        ├── anat
+        │   ├── sub-01_ses-intervention_T1w.json
+        │   └── sub-01_ses-intervention_T1w.nii.gz
+        └── pet
+            ├── sub-01_ses-intervention_task-eyes_events.json
+            ├── sub-01_ses-intervention_task-eyes_events.tsv
+            ├── sub-01_ses-intervention_task-eyes_pet.json
+            └── sub-01_ses-intervention_task-eyes_pet.nii.gz
+</code></pre></div>
+<p>Now simply point the bids validator at the folder path of the subject(s) in
+question:</p>
+<div class="highlight"><pre><span></span><code>user@host:~/bids-examples$ bids-validator sub001
+</code></pre></div>
+<h3 id="types-of-feedback_1"><a class="toclink" href="#types-of-feedback_1">Types of Feedback</a></h3>
+<h4 id="error_1"><a class="toclink" href="#error_1">Error</a></h4>
+<p>As is the case w/ the browser or any version of the validator follow the <code>[ERR]</code>
+messages and correct until bids-validator returns 0 errors after running.</p>
+<div class="highlight"><pre><span></span><code>user@host:~/bids-examples$ bids-validator sub001
+bids-validator@1.7.1
+
+    <span class="m">1</span>: <span class="o">[</span>ERR<span class="o">]</span> Invalid JSON file. The file is not formatted according the schema. <span class="o">(</span>code: <span class="m">55</span> - JSON_SCHEMA_VALIDATION_ERROR<span class="o">)</span>
+        ./sub-01/ses-baseline/pet/sub-01_ses-baseline_pet.json
+            Evidence:  should have property InjectedRadioactivityUnits when property InjectedRadioactivity is present
+        ./sub-01/ses-baseline/pet/sub-01_ses-baseline_pet.json
+            Evidence:  should have required property <span class="s1">&#39;InjectedMassUnits&#39;</span>
+        ...
+                ...
+        ... and <span class="m">3</span> more files having this issue <span class="o">(</span>Use --verbose to see them all<span class="o">)</span>.
+
+    Please visit https://neurostars.org/search?q<span class="o">=</span>JSON_SCHEMA_VALIDATION_ERROR <span class="k">for</span> existing conversations about this issue.
+
+
+        Summary:                Available Tasks:        Available Modalities:
+        <span class="m">14</span> Files, <span class="m">5</span>.72MB                                T1w
+        <span class="m">1</span> - Subject                                     pet
+        <span class="m">2</span> - Sessions                                    events
+
+
+    If you have any questions, please post on https://neurostars.org/tags/bids.
+</code></pre></div>
+<h4 id="warn"><a class="toclink" href="#warn">Warn</a></h4>
+<p>As stated with the browser version above, one may elect to ignore warnings, but
+the information provided via the validator should help to pinpoint where and how
+to resolve some of these warnings. When in doubt consult the
+<a href="https://bids-specification.readthedocs.io/en/stable/">BIDS Spec</a></p>
+<div class="highlight"><pre><span></span><code>user@host:~/bids-examples$ bids-validator sub001/
+bids-validator@1.7.1
+
+<span class="m">1</span>: <span class="o">[</span>WARN<span class="o">]</span> Tabular file contains custom columns not described <span class="k">in</span> a data dictionary <span class="o">(</span>code: <span class="m">82</span> - CUSTOM_COLUMN_WITHOUT_DESCRIPTION<span class="o">)</span>
+        ./sub-01/func/sub-01_task-balloonanalogrisktask_run-01_events.tsv
+                ...
+                ...
+... and <span class="m">38</span> more files having this issue <span class="o">(</span>Use --verbose to see them all<span class="o">)</span>.
+
+    Please visit https://neurostars.org/search?q<span class="o">=</span>CUSTOM_COLUMN_WITHOUT_DESCRIPTION <span class="k">for</span> existing conversations about this issue.
+
+
+        Summary:                   Available Tasks:                Available Modalities:
+        <span class="m">134</span> Files, <span class="m">411</span>.53KB        balloon analog risk task        T1w
+        <span class="m">16</span> - Subjects                                              inplaneT2
+        <span class="m">1</span> - Session                                                bold
+                                                                   events
+
+
+    If you have any questions, please post on https://neurostars.org/tags/bids.
+</code></pre></div>
+<h4 id="success_1"><a class="toclink" href="#success_1">Success</a></h4>
+<p>Pass go and collect 200 dollars, the data set in question passes validation.</p>
+<div class="highlight"><pre><span></span><code>user@host:~/bids-examples$ bids-validator sub001
+bids-validator@1.7.1
+
+This dataset appears to be BIDS compatible.
+
+        Summary:                  Available Tasks:        Available Modalities:
+        <span class="m">12</span> Files, <span class="m">218</span>.75KB                                T1w
+        <span class="m">1</span> - Subject                                       pet
+        <span class="m">1</span> - Session                                       blood
+
+
+    If you have any questions, please post on https://neurostars.org/tags/bids
+</code></pre></div></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "."</script>
+    
+    <script src="js/base.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

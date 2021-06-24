@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    
+    <title>Home - BIDS starter kit</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="css/base.min.css" rel="stylesheet">
+    <link href="css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body class="homepage" >
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="index.html">BIDS starter kit</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li class="active">
+                        <a href="index.html">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hierarchy <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="folders.html">Folders</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="files.html">Files</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="creating_iEEG_dataset.html">iEEG</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="tutorials.html">others</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ressources <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="examples.html">Examples</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="videos.html">Videos</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="publications.html">Publications</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="links.html">Links</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="validator.html">Validator</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="apps.html">BIDS-apps</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="FAQ.html">FAQ</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="glossary.html">Glossary</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="contact.html">Contact</a>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li class="disabled">
+                        <a rel="prev" >
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="folders.html">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#motivation">Motivation</a></li>
+        <li class="first-level "><a href="#project-summary">Project Summary</a></li>
+            <li class="second-level"><a href="#how-do-i-find-information">How do I find information?</a></li>
+                
+        <li class="first-level "><a href="#philosophy">Philosophy</a></li>
+        <li class="first-level "><a href="#benefits">Benefits</a></li>
+            <li class="second-level"><a href="#for-the-public-good">For the public good</a></li>
+                
+            <li class="second-level"><a href="#for-yourself">For yourself</a></li>
+                
+        <li class="first-level "><a href="#users">Users</a></li>
+        <li class="first-level "><a href="#contributing">Contributing</a></li>
+        <li class="first-level "><a href="#acknowledgements">Acknowledgements</a></li>
+            <li class="second-level"><a href="#sponsor-organizations">Sponsor Organizations</a></li>
+                
+            <li class="second-level"><a href="#publications">Publications</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 align="center">Welcome to the BIDS Starter Kit</h1>
+
+<div align="center">
+  <strong>How to get started with the Brain Imaging Data Structure</strong>
+</div>
+
+<div align="center">
+  A community-curated collection of tutorials, wikis, and templates to get you started with creating BIDS compliant datasets.
+</div>
+
+<div align="center">
+  <h3>
+    <a href="http://bids.neuroimaging.io/">
+      BIDS Homepage
+    </a>
+    <span> | </span>
+    <a href=https://github.com/bids-standard/bids-starter-kit/wiki>
+      Wiki
+    </a>
+     <span> | </span>
+    <a href="http://bids-specification.readthedocs.io/">
+      Standard
+    </a>
+    <span> | </span>
+    <a href="https://github.com/bids-standard/bids-starter-kit/wiki/Tutorials">
+      Tutorials
+    </a>
+    <span> | </span>
+    <a href="https://mattermost.brainhack.org/brainhack/channels/bids-starter-kit">
+      Chat
+    </a>
+    <span> | </span>
+    <a href=https://neurostars.org/tags/bids>
+      Forum
+    </a>
+  </h3>
+</div>
+
+<p><br></p>
+<div align="center">
+
+  <iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/BYdhjVuBsG0" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+
+</div>
+
+<h2 id="motivation"><a class="toclink" href="#motivation">Motivation</a></h2>
+<p>The primary goal of this project is to simplify the process of learning about
+the Brain Imaging Data Structure (BIDS). We hope that the resources in this
+wiki, such as links to tutorials, easy-to-read documentation, and code will make
+BIDS easier to adopt. In order to remain up to date with the continuously
+changing BIDS specifications, we have adopted a similarly open model to allow
+<a href="https://github.com/bids-standard/bids-starter-kit/blob/master/CONTRIBUTING.md">contributions</a>
+from the community.</p>
+<h2 id="project-summary"><a class="toclink" href="#project-summary">Project Summary</a></h2>
+<p>Neuroimaging and neurophysiology data can be costly in both time and money to
+acquire. This creates a barrier for many underfunded researchers without access
+to the required equipment. Responsible data sharing can level the playing field,
+but the many different specifications of these acquired images cause portability
+issues between different labs and scientists. BIDS is a framework for organizing
+data that standardizes file organization and dataset description between
+different researchers.</p>
+<h3 id="how-do-i-find-information"><a class="toclink" href="#how-do-i-find-information">How do I find information?</a></h3>
+<p>For general information to help you get started with BIDS, we reccommend the
+<a href="https://github.com/bids-standard/bids-starter-kit/wiki">wiki</a>. It includes
+pages such as an overall introduction to the BIDS folder structure, links to
+tutorials, and a glossary to help you with some of the technical terms.</p>
+<p><strong>Make sure to check our <a href="FAQ.html">FAQ</a> !!!</strong></p>
+<p>For metadata file templates or code to help you get started, please scroll up to
+find the appropriate files that are available in your language of choice.</p>
+<p>Finally, for more advanced knowledge that may pertain to specific use cases for
+your data, please refer to the full
+<a href="https://bids-specification.readthedocs.io/en/stable/">BIDS Specification</a></p>
+<h2 id="philosophy"><a class="toclink" href="#philosophy">Philosophy</a></h2>
+<p>The most important part of BIDS are the users: if more people use it, more data
+will be shared and the more powerful it will become. <strong>We want to make it
+easy to learn</strong> and more adopted. Since BIDS is platform independent and
+still an adapting, growing tool, the greater the community, the better it will
+be.</p>
+<h2 id="benefits"><a class="toclink" href="#benefits">Benefits</a></h2>
+<h4 id="for-the-public-good"><a class="toclink" href="#for-the-public-good">For the public good</a></h4>
+<ul>
+<li>Lowers scientific waste</li>
+<li>Gives opportunity to less-funded researchers</li>
+<li>Improves efficiency</li>
+<li>Spurs innovation</li>
+</ul>
+<h4 id="for-yourself"><a class="toclink" href="#for-yourself">For yourself</a></h4>
+<ul>
+<li>You are likely the future user of the data and data analysis pipelines
+    you’ve developed</li>
+<li>Enables and simplifies collaboration</li>
+<li>Reviewers and funding agencies like to see reproducible results</li>
+<li>Open-science based funding opportunities and awards available (i.e. OHBM
+    Replication Award, Mozilla Open Science Fellowship, Google Summer of Code,
+    etc.)</li>
+</ul>
+<h2 id="users"><a class="toclink" href="#users">Users</a></h2>
+<p>BIDS is for everyone! Programming is not required, it simply makes some
+processes more efficient. All users can take part in the benefits such as
+organized data, reproducible research, and data sharing.
+<img alt="users" src="https://i.imgur.com/0iAMuJ8.png" /></p>
+<h2 id="contributing"><a class="toclink" href="#contributing">Contributing</a></h2>
+<p>There are many ways to get in touch with us! Please see our
+<a href="https://github.com/bids-standard/bids-starter-kit/wiki/Contact">Contact Page</a>
+for all the details.</p>
+<p>To find out more about all the different ways to contribute to the BIDS Starter
+Kit, check out our <a href="CONTRIBUTING.md"><strong>contributing guidelines</strong></a>. They'll tell
+you how to <a href="CONTRIBUTING.md/#get-in-touch">get in touch</a>, give you some useful
+resources to help you
+<a href="CONTRIBUTING.md/#contributing-through-github">contribute via GitHub</a>, how you
+can <a href="CONTRIBUTING.md/#where-to-start-wiki-code-and-templates">edit the wiki</a> or
+how to make a change <a href="CONTRIBUTING.md#where-to-start-issue-labels">using issues</a>
+(you can also check out GitHub's help on
+<a href="https://help.github.com/articles/about-issues">issues</a>) and a
+<a href="CONTRIBUTING.md#making-a-change-with-a-pull-request">pull request</a>.</p>
+<p>If you're here during summer 2018 :icecream::palm_tree:, you should reach out to
+our lovely <a href="https://summerofcode.withgoogle.com">Google Summer of Code</a> student <a href="https://github.com/Park-Patrick">Patrick Park</a>.
+It would really help his project along if you said hello and passed along any
+feedback you have :purple_heart:. Please don't be shy, <strong>the newer you are the
+more valuable your feedback is</strong> :thumbsup:</p>
+<h2 id="acknowledgements"><a class="toclink" href="#acknowledgements">Acknowledgements</a></h2>
+<h3 id="sponsor-organizations"><a class="toclink" href="#sponsor-organizations">Sponsor Organizations</a></h3>
+<p><br></p>
+<div align="center">
+
+  <a href="https://summerofcode.withgoogle.com/">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/GSoC.png/220px-GSoC.png" 
+    width="125" 
+    height="125" 
+    title="GSOC" 
+    alt="GSOC">
+  </a>
+
+  <a href="https://www.incf.org/">
+    <img src="https://www.eudat.eu/sites/default/files/styles/medium/public/logo/INCF_0.png?itok=uRT54XCM" 
+    width="200" 
+    height="125" 
+    title="INCF" 
+    alt="INCF">
+  </a>
+
+  <a href="https://www.arnoldventures.org/newsroom/laura-and-john-arnold-foundation-announces-3-8-million-grant-to-stanford-university-to-improve-the-quality-of-neuroscience-research">
+    <img 
+    src="https://www.arnoldventures.org/static/img/logo-on-light.svg" 
+    width="200" 
+    height="125" 
+    title="Arnold Ventures" 
+    alt="Arnold Ventures">
+  </a>
+
+  <a href="http://grantome.com/grant/NIH/R24-MH114705-01">
+    <img src="http://grantome.com/images/funders/NIH.png" 
+    width="125" 
+    height="125" 
+    title="NIH" 
+    alt="NIH">
+  </a>
+
+</div>
+
+<p><br></p>
+<h3 id="publications"><a class="toclink" href="#publications">Publications</a></h3>
+<p><strong>Please consider citing the relevant papers when publishing a project that uses
+BIDS</strong></p>
+<p>All publications are listed in our wiki:
+<a href="https://github.com/bids-standard/bids-starter-kit/wiki/Publications">https://github.com/bids-standard/bids-starter-kit/wiki/Publications</a></p>
+<p>You'll almost always want to cite the original paper:</p>
+<blockquote>
+<p><a href="https://www.nature.com/articles/sdata201644">The brain imaging data structure, a format for organizing and describing outputs of neuroimaging experiments</a>
+Scientific Data volume 3, Article number: 160044 (2016)</p>
+</blockquote>
+<div class="highlight"><pre><span></span><code><span class="nc">@article</span><span class="p">{</span><span class="nl">gorgolewski2016brain</span><span class="p">,</span>
+  <span class="na">title</span><span class="p">=</span><span class="s">{The brain imaging data structure, a format for organizing and describing outputs of neuroimaging experiments}</span><span class="p">,</span>
+  <span class="na">author</span><span class="p">=</span><span class="s">{Gorgolewski, K. and Auer, T. and Calhoun, V. and others}</span><span class="p">,</span>
+  <span class="na">journal</span><span class="p">=</span><span class="s">{Scientific Data}</span><span class="p">,</span>
+  <span class="na">year</span><span class="p">=</span><span class="s">{2016}</span><span class="p">,</span>
+  <span class="na">volume</span><span class="p">=</span><span class="s">{3}</span><span class="p">,</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><br></p>
+<p>But there are also modality specific extension papers for
+<a href="https://doi.org/10.1038/sdata.2018.110">MEG</a>,
+<a href="https://doi.org/10.31234/osf.io/63a4y">EEG</a> and
+<a href="https://doi.org/10.31234/osf.io/r7vc2">iEEG</a>, or the
+<a href="https://doi.org/10.1371/journal.pcbi.1005209">BIDS-Apps</a> paper that should be
+referenced if you're using data of that type.</p></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "."</script>
+    
+    <script src="js/base.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>
+
+<!--
+MkDocs version : 1.2.1
+Build Date UTC : 2021-06-24 09:37:16.489707+00:00
+-->

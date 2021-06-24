@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    
+    <title>Glossary - BIDS starter kit</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="css/base.min.css" rel="stylesheet">
+    <link href="css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="index.html">BIDS starter kit</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="index.html">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hierarchy <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="folders.html">Folders</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="files.html">Files</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="creating_iEEG_dataset.html">iEEG</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="tutorials.html">others</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ressources <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="examples.html">Examples</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="videos.html">Videos</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="publications.html">Publications</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="links.html">Links</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="validator.html">Validator</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="apps.html">BIDS-apps</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="FAQ.html">FAQ</a>
+                    </li>
+                
+                
+                
+                    <li class="active">
+                        <a href="glossary.html">Glossary</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="contact.html">Contact</a>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="FAQ.html">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="contact.html">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#bids-jargon-busting">BIDS jargon busting</a></li>
+            <li class="second-level"><a href="#general-resources">General resources</a></li>
+                
+            <li class="second-level"><a href="#bids-terms">BIDS Terms</a></li>
+                
+                <li class="third-level"><a href="#0-9">0-9</a></li>
+                <li class="third-level"><a href="#a">A</a></li>
+                <li class="third-level"><a href="#b">B</a></li>
+                <li class="third-level"><a href="#c">C</a></li>
+                <li class="third-level"><a href="#d">D</a></li>
+                <li class="third-level"><a href="#e">E</a></li>
+                <li class="third-level"><a href="#f">F</a></li>
+                <li class="third-level"><a href="#g">G</a></li>
+                <li class="third-level"><a href="#h">H</a></li>
+                <li class="third-level"><a href="#i">I</a></li>
+                <li class="third-level"><a href="#j">J</a></li>
+                <li class="third-level"><a href="#k">K</a></li>
+                <li class="third-level"><a href="#l">L</a></li>
+                <li class="third-level"><a href="#m">M</a></li>
+                <li class="third-level"><a href="#n">N</a></li>
+                <li class="third-level"><a href="#o">O</a></li>
+                <li class="third-level"><a href="#p">P</a></li>
+                <li class="third-level"><a href="#q">Q</a></li>
+                <li class="third-level"><a href="#r">R</a></li>
+                <li class="third-level"><a href="#s">S</a></li>
+                <li class="third-level"><a href="#t">T</a></li>
+                <li class="third-level"><a href="#u">U</a></li>
+                <li class="third-level"><a href="#v">V</a></li>
+                <li class="third-level"><a href="#w">W</a></li>
+                <li class="third-level"><a href="#x">X</a></li>
+                <li class="third-level"><a href="#y">Y</a></li>
+                <li class="third-level"><a href="#z">Z</a></li>
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="bids-jargon-busting"><a class="toclink" href="#bids-jargon-busting">BIDS jargon busting</a></h1>
+<p><img align="right" width="35%" src="https://imgs.xkcd.com/comics/period_speech.png" alt="XKCD comic 771"/></p>
+<p><strong><em>Simple definitions for any BIDS related terms</em></strong></p>
+<p>We know that when you're getting started with something new there are often
+jargon-y words that make understanding everthing that's going on kinda hard.</p>
+<p>The point of this list is to give you a place to go to figure out some of those
+terms that "everyone" seems to know.</p>
+<p>Please add to this list! It will always be :construction: <strong>in construction</strong>
+:construction: and we really encourage everyone to update it to be more useful.
+If there's a word you don't know, there's almost certainly someone else who
+doesn't know what it means either.</p>
+<p><strong>If you are unsure about a term/definition that you are adding, please add it
+anyway and add an asterix(*) to signal that you want it reviewed.</strong></p>
+<h3 id="general-resources"><a class="toclink" href="#general-resources">General resources</a></h3>
+<p>We aren't covering all words associated with brain imaging (that might be rather
+overwhelming) so we're also collecting together some more general resources
+here:</p>
+<ul>
+<li>MIT Brain Research's glossary of brain imaging terminology:
+    http://mindhive.mit.edu/node/71</li>
+</ul>
+<h3 id="bids-terms"><a class="toclink" href="#bids-terms">BIDS Terms</a></h3>
+<h4 id="0-9"><a class="toclink" href="#0-9">0-9</a></h4>
+<h4 id="a"><a class="toclink" href="#a">A</a></h4>
+<h5 id="acquisition"><a class="toclink" href="#acquisition"><strong>acquisition</strong>:</a></h5>
+<p>one continuous block of a scan</p>
+<h4 id="b"><a class="toclink" href="#b">B</a></h4>
+<h5 id="bids"><a class="toclink" href="#bids"><strong>BIDS</strong>:</a></h5>
+<p>Brain Imaging Data Structure - a standardised way to organise your neuroimaging
+data.</p>
+<ul>
+<li>http://bids.neuroimaging.io</li>
+</ul>
+<h4 id="c"><a class="toclink" href="#c">C</a></h4>
+<h5 id="channel"><a class="toclink" href="#channel"><strong>channel</strong>:</a></h5>
+<p>the combination of the differential amplifier and the analog-to-digital
+converter that results in the potential different (for EEG and iEEG) or magnetic
+field or gradient (for MEG) to end up on disk. This should not be confused with
+<strong>electrode</strong> (see below).</p>
+<h5 id="container"><a class="toclink" href="#container"><strong>container</strong>:</a></h5>
+<p>A container is a file which packages all the software and instructions required
+to perform a series of tasks.</p>
+<h4 id="d"><a class="toclink" href="#d">D</a></h4>
+<h5 id="derivatives"><a class="toclink" href="#derivatives"><strong>derivatives</strong>:</a></h5>
+<p>processed (i.e. non-raw) data</p>
+<h5 id="dataset-a"><a class="toclink" href="#dataset-a"><strong>dataset</strong>: a</a></h5>
+<p>collection of data that can include many subjects or sessions</p>
+<h4 id="e"><a class="toclink" href="#e">E</a></h4>
+<h5 id="electrode"><a class="toclink" href="#electrode"><strong>electrode</strong>:</a></h5>
+<p>the small metal disk that is in contact with the scalp (EEG) or directly
+touching the brain (iEEG). This should not be confused with the EEG or iEGG
+<strong>channel</strong> (see above).</p>
+<h5 id="extensions"><a class="toclink" href="#extensions"><strong>extensions</strong>:</a></h5>
+<p>branches of BIDS that are for specific types of data (i.e. PET)</p>
+<h4 id="f"><a class="toclink" href="#f">F</a></h4>
+<h5 id="file-extension"><a class="toclink" href="#file-extension"><strong>file extension</strong>:</a></h5>
+<p>A file extension is the suffix following the last <code>.</code> in a filename, for example
+the <code>.jpeg</code> in <code>dog.jpeg</code>. These exist to give us instructions on how to
+interpret files. File extensions that are important in BIDS are <a href="#j"><code>.json</code></a>,
+<code>.nii</code>, <a href="#t"><code>.tsv</code></a></p>
+<h4 id="g"><a class="toclink" href="#g">G</a></h4>
+<h4 id="h"><a class="toclink" href="#h">H</a></h4>
+<h5 id="heuristic-file"><a class="toclink" href="#heuristic-file"><strong>heuristic file</strong>:</a></h5>
+<p>A file that can sort your data into categories based on naming patterns</p>
+<h4 id="i"><a class="toclink" href="#i">I</a></h4>
+<h5 id="inheritance"><a class="toclink" href="#inheritance"><strong>inheritance</strong>:</a></h5>
+<p>Any metadata file (.json, .bvec, .tsv, etc.) may be defined at any directory
+level. The values from the top level are inherited by all lower levels unless
+they are overridden by a file at the lower level.</p>
+<h4 id="j"><a class="toclink" href="#j">J</a></h4>
+<h5 id="json"><a class="toclink" href="#json"><strong>JSON</strong>:</a></h5>
+<p>A JSON file can be thought of as a form or as a list of name-value pairs.
+Example: {"firstName": "John", "lastName": "Smith"}.</p>
+<ul>
+<li>You can find more information about <code>json</code> files in the
+    <a href="https://github.com/bids-standard/bids-starter-kit/wiki/Metadata-file-formats">Metadata file formats</a>
+    wiki page.</li>
+</ul>
+<h4 id="k"><a class="toclink" href="#k">K</a></h4>
+<h4 id="l"><a class="toclink" href="#l">L</a></h4>
+<h5 id="library"><a class="toclink" href="#library"><strong>library</strong>:</a></h5>
+<h4 id="m"><a class="toclink" href="#m">M</a></h4>
+<h5 id="metadata"><a class="toclink" href="#metadata"><strong>metadata</strong>:</a></h5>
+<p>Supporting data that describes your main data (i.e. data about data). For
+example if your main data is an MRI image your metadata might be information
+about the date and time of imaging, the image type, the machine serial number
+etc. An example: "Scan Date" would be metadata that describes the date at which
+you acquired the actual data.</p>
+<h4 id="n"><a class="toclink" href="#n">N</a></h4>
+<h4 id="o"><a class="toclink" href="#o">O</a></h4>
+<h5 id="open-science"><a class="toclink" href="#open-science"><strong>open science</strong>:</a></h5>
+<p>Scientific research and data that is free and available for everyone to benefit
+from.</p>
+<h4 id="p"><a class="toclink" href="#p">P</a></h4>
+<h5 id="parameter"><a class="toclink" href="#parameter"><strong>parameter</strong>:</a></h5>
+<p>generally speaking, a parameter is numerical variable that we (scientists,
+computer programs, etc) are able to manipulate in order to change outcomes.</p>
+<h4 id="q"><a class="toclink" href="#q">Q</a></h4>
+<h4 id="r"><a class="toclink" href="#r">R</a></h4>
+<h5 id="readme"><a class="toclink" href="#readme"><strong>README</strong>:</a></h5>
+<p>A readme is a text file. The readme's purpose is to provide explanation and
+documentation for the contents of the folder it lives in.</p>
+<h4 id="s"><a class="toclink" href="#s">S</a></h4>
+<h5 id="subject"><a class="toclink" href="#subject"><strong>subject</strong>:</a></h5>
+<p>a person / animal / object participating in a study</p>
+<h5 id="session"><a class="toclink" href="#session"><strong>session</strong>:</a></h5>
+<p>an uninterrupted period that a subject is in a specific lab. This often
+corresponds to a lab visit. See also this
+<a href="https://bids-specification.readthedocs.io/en/stable/02-common-principles.html#definitions">definition</a>.</p>
+<h5 id="sequence"><a class="toclink" href="#sequence"><strong>sequence</strong>:</a></h5>
+<p>a combination of settings on the MR scanner that determine the way the MR data
+is acquired. This includes the TE, TR, FOV, in-plane resolution, slice spacing,
+etc.</p>
+<h5 id="sidecar-as-in-json-sidecar"><a class="toclink" href="#sidecar-as-in-json-sidecar"><strong>sidecar</strong> (as in json sidecar):</a></h5>
+<p>A json file associated to a nii file (usually by having the same name preceding
+the <a href="#f">file extension</a>). Together these make up an acquisition; the nii file
+contains the image and the json contains various <a href="#m">metadata</a>.</p>
+<h5 id="sourcedata"><a class="toclink" href="#sourcedata"><strong>sourcedata</strong>:</a></h5>
+<p>raw data (or metadata) in its original format prior to conversion to BIDS, e.g.
+images in DICOM format, EEG data in a proprietary format or presentation log
+files.</p>
+<h4 id="t"><a class="toclink" href="#t">T</a></h4>
+<h5 id="tsv"><a class="toclink" href="#tsv"><strong>tsv</strong>:</a></h5>
+<p>tsv stands for <strong>t</strong>ab <strong>s</strong>eparated <strong>v</strong>alues. A .tsv file contains a table
+(like a simple excel spreadsheet) containing text. Table values are separated by
+tabs.</p>
+<ul>
+<li>You can find more information about <code>tsv</code> files in the
+    <a href="https://github.com/bids-standard/bids-starter-kit/wiki/Metadata-file-formats">Metadata file formats</a>
+    wiki page.</li>
+</ul>
+<h4 id="u"><a class="toclink" href="#u">U</a></h4>
+<h5 id="uri"><a class="toclink" href="#uri"><strong>URI</strong>:</a></h5>
+<p>stands for <strong>U</strong>niform <strong>R</strong>esource <strong>I</strong>dentifier. It is a very general term to
+describe the "address" of an "object" on the web. A type of URI many of us are
+familiar with is an URL (Uniform Resource Locator) that points to a webpage, an
+image... Another very common type is a DOI (Digital Object Identifiers) that can
+be used to point to a scientific article, a data or code archive (for example on
+Zenodo, figshare...)</p>
+<h4 id="v"><a class="toclink" href="#v">V</a></h4>
+<h4 id="w"><a class="toclink" href="#w">W</a></h4>
+<h4 id="x"><a class="toclink" href="#x">X</a></h4>
+<h4 id="y"><a class="toclink" href="#y">Y</a></h4>
+<h4 id="z"><a class="toclink" href="#z">Z</a></h4></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "."</script>
+    
+    <script src="js/base.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

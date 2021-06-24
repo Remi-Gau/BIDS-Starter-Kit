@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    
+    <title>BIDS-apps - BIDS starter kit</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="css/base.min.css" rel="stylesheet">
+    <link href="css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="index.html">BIDS starter kit</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="index.html">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hierarchy <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="folders.html">Folders</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="files.html">Files</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="creating_iEEG_dataset.html">iEEG</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="tutorials.html">others</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ressources <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="examples.html">Examples</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="videos.html">Videos</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="publications.html">Publications</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="links.html">Links</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="validator.html">Validator</a>
+                    </li>
+                
+                
+                
+                    <li class="active">
+                        <a href="apps.html">BIDS-apps</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="FAQ.html">FAQ</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="glossary.html">Glossary</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="contact.html">Contact</a>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="validator.html">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="FAQ.html">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#what-is-a-bids-app">What is a BIDS App?</a></li>
+        <li class="first-level "><a href="#helpful-links">Helpful Links</a></li>
+        <li class="first-level "><a href="#faq">FAQ</a></li>
+        <li class="first-level "><a href="#testing-data">Testing Data</a></li>
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h2 id="what-is-a-bids-app"><a class="toclink" href="#what-is-a-bids-app">What is a BIDS App?</a></h2>
+<p>A <a href="http://bids-apps.neuroimaging.io/">BIDS App</a> is an analysis pipeline that
+takes a BIDS formatted dataset as input and has all of its dependencies packaged
+within a container (<a href="https://www.docker.com/">Docker</a> or
+<a href="https://singularity.lbl.gov/">Singularity</a>)</p>
+<h2 id="helpful-links"><a class="toclink" href="#helpful-links">Helpful Links</a></h2>
+<ul>
+<li><a href="http://bids-apps.neuroimaging.io/">BIDS Apps home page</a></li>
+<li><a href="http://bids-apps.neuroimaging.io/tutorial/">BIDS Apps tutorial</a></li>
+<li><a href="https://github.com/BIDS-Apps/example">Example BIDS App repository</a> : A
+    minimalist example of a BIDS App consisting of a Dockerfile and a simple
+    entry point script (written in this case in Python) accepting the standard
+    BIDS Apps command line arguments. This repository can be used as a template
+    for new BIDS Apps.</li>
+<li>BIDS apps: Improving ease of use, accessibility, and reproducibility of
+    neuroimaging data analysis methods (Gorgolewski et al, Plos Comp Bio, 2017)
+    doi:
+    <a href="https://doi.org/10.1371/journal.pcbi.1005209">10.1371/journal.pcbi.1005209</a></li>
+</ul>
+<h2 id="faq"><a class="toclink" href="#faq">FAQ</a></h2>
+<p><strong>Which container do I use to start building my BIDS App?</strong></p>
+<p>The only minimum requirements of a BIDS App's container is its ability to run
+your pipeline. So for example, if your app is mostly Python based it should be
+sufficient to start with any image that has Python and include your pipenv
+dependencies.</p>
+<p><br></p>
+<p><strong>I noticed that every BIDS app follows some specific arguments such as
+<code>bids_dir</code>, <code>output_dir</code>, and <code>analysis_level</code> and <code>participant_label</code>. Can I
+add more arguments?</strong></p>
+<p>Yes, the mandatory arguments that you have listed should be in every BIDS App,
+but you are free to add more that are specific to the task your app will
+perform.</p>
+<p><br></p>
+<p><strong>I noticed that there are 2 kinds of analysis levels --&gt; <code>participant</code> and
+<code>group</code>. What does this mean?</strong></p>
+<p>Generally, "participant" means individual level analysis (i.e. single subject)
+The group level analysis can be thought of as the second step, where the input
+becomes the output of the "participant" level analysis. For example, generating
+statistic maps of each subject's brain could be considered "participant", while
+generating the average of these maps across the dataset could be considered
+"group".</p>
+<p><strong>What do we do if our application does not have any use for the group level
+analysis?</strong></p>
+<p>If your pipeline has no need for group level analysis, it is fine if it is only
+valid for the analysis_level argument (see
+<a href="http://fmriprep.readthedocs.io/en/latest/usage.html">fmriprep</a>)</p>
+<p><br></p>
+<p><strong>Is it mandatory to first check the dataset validity using the
+BIDS-validator?</strong></p>
+<p>It is an extremely helpful feature to have validation of the dataset as part of
+your tool. However, it's not considered mandatory. (i.e. I know of many apps
+that just simply fail with an error message if the dataset is not BIDS
+compliant)</p>
+<p><br></p>
+<p><strong>How do I upload my BIDS App to the BIDS-App Github org? (i.e. so that it shows
+up <a href="http://bids-apps.neuroimaging.io/apps/">here</a>)</strong></p>
+<p>You can release BIDS Apps using your own or your lab's account. However, if you
+want to be added to the BIDS docker hub, please message Chris Gorgolewski to
+have a repo created for you.</p>
+<p>If you base your code on https://github.com/BIDS-Apps/example deployment on
+docker hub will happen automatically via circleci</p>
+<h2 id="testing-data"><a class="toclink" href="#testing-data">Testing Data</a></h2>
+<p>For both lightweight and full datasets to test your BIDS App, choose from one of
+these
+<a href="https://github.com/INCF/BIDS-Starter-Kit/wiki/Dataset-Examples">example datasets</a></p></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "."</script>
+    
+    <script src="js/base.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>
