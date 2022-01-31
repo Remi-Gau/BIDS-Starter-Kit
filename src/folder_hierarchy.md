@@ -65,7 +65,7 @@ session per subject, this level of the hierarchy may be omitted.
 
 Represents different types of data. Must be one of:
 
--   func 
+-   func
 -   dwi
 -   fmap
 -   anat
