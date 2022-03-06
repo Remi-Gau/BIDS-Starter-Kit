@@ -3,11 +3,15 @@
 Metadata are stored in .json and .tsv files. These files are language-agnostic,
 meaning you can work with them in, for example: Python, Matlab, or R. This page
 covers common ways to read/write these files in common languages for
-neuroscience analysis. More extensive example templates for creating these BIDS
-metadata files can be found in the
-[Matlab code templates](https://github.com/bids-standard/bids-starter-kit/tree/main/matlabCode)
+neuroscience analysis.
+
+More extensive example templates can be found
+[here](https://github.com/bids-standard/bids-starter-kit/tree/main/templates),
+well as
+[MATLAB / Octave code](https://github.com/bids-standard/bids-starter-kit/tree/main/matlabCode)
 and
-[Python code templates](https://github.com/bids-standard/bids-starter-kit/tree/main/pythonCode)
+[Python code](https://github.com/bids-standard/bids-starter-kit/tree/main/pythonCode)
+to help you generate some of those files.
 
 ## JSON Files
 
@@ -64,26 +68,26 @@ The examples below are for the
 ### Writing a `.json` file
 
 ```matlab
-    root_dir = './';
-    project = 'temp';
-    sub_id = '01';
-    ses_id = '01';
-    acquisition = 'anat';
+root_dir = './';
+project = 'temp';
+sub_id = '01';
+ses_id = '01';
+acquisition = 'anat';
 
-    anat_json_name = fullfile(root_dir,project,...
-        ['sub-' sub_id],...
-        ['ses-' ses_id],...
-        acquisition,...
-        ['sub-' sub_id '_ses-' ses_id '_T1W.json']);
+anat_json_name = fullfile(root_dir,project,...
+                            ['sub-' sub_id],...
+                            ['ses-' ses_id],...
+                            acquisition,...
+                            ['sub-' sub_id '_ses-' ses_id '_T1W.json']);
 
-    % Assign the fields in the Matlab structure that can be saved as a json:
-    anat_json.Manufacturer = 'GE';
-    anat_json.ManufacturersModelName =  'Discovery MR750';
-    anat_json.MagneticFieldStrength = 3;
-    anat_json.PulseSequence = 'T1 weighted SPGR';
+% Assign the fields in the Matlab structure that can be saved as a json:
+anat_json.Manufacturer = 'GE';
+anat_json.ManufacturersModelName =  'Discovery MR750';
+anat_json.MagneticFieldStrength = 3;
+anat_json.PulseSequence = 'T1 weighted SPGR';
 
-    json_options.indent = '    '; % this makes the json look pretier when opened in a txt editor
-    jsonwrite(loc_json_name,anat_json,json_options)
+json_options.indent = '    '; % this makes the json look pretier when opened in a txt editor
+jsonwrite(loc_json_name,anat_json,json_options)
 ```
 
 ## Python
@@ -157,18 +161,18 @@ Below are ways to read / write TSV files in common languages.
 ### Reading a `.tsv` file:
 
 ```matlab
-    readtable([filename],
-               'FileType', 'text',
-               'Delimiter', '\t',
-               'TreatAsEmpty', {'N/A','n/a'}
-             );
+readtable([filename],
+          'FileType', 'text',
+          'Delimiter', '\t',
+          'TreatAsEmpty', {'N/A','n/a'}
+          );
 ```
 
 ### Writing a `.tsv` file:
 
 #### Matlab
 
-```
+```matlab
 root_dir = 'MyRootDir';
 bidsProject = 'temp';
 bids_particpants_name = ['participants.tsv'];
@@ -258,7 +262,7 @@ packages.
 In this example, we assume the .tsv includes column names (headers), and
 explicitly set column separator (delimitor) to tab ('\t')
 
-```
+```R
 data = read.table('myFile.tsv', header=TRUE, sep='\t')
 ```
 
