@@ -12,7 +12,7 @@ Ideally the questions will link to an answer elsewhere in the repository to
 maximise the different ways of finding out more about BIDS.
 
 ```{note}
-For questions related to the BIDS apps, 
+For questions related to the BIDS apps,
 please visit [the BIDS apps website](https://bids-apps.neuroimaging.io/dev_faq/).
 ```
 
@@ -104,7 +104,7 @@ Otherwise you can also use:
 
 -   [Fieldtrip](http://www.fieldtriptoolbox.org/faq/how_can_i_anonymize_an_anatomical_mri/)
     under matlab can do it.
--   SPM8 and SPM12: when in the batch editor fo to --> SPM menu --> Util -->
+-   SPM8 and SPM12: when in the batch editor go to --> SPM menu --> Util -->
     De-face
 
 ## EEG specific questions

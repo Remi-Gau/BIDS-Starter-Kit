@@ -316,14 +316,14 @@ bidsProject = 'temp';
 mkdir(fullfile(root_dir, bidsProject));
 bids_participants_name = 'participants.tsv';
 
-participant_id = ['sub-01'; 'sub-02']; 
+participant_id = ['sub-01'; 'sub-02'];
 age = [20 30]';
 sex = ['m';'f'];
 
 t = table(participant_id,age,sex);
 writetable(t, fullfile(root_dir, bidsProject, bids_participants_name), ...
               'FileType', 'text', ...
-              'Delimiter', '\t'); 
+              'Delimiter', '\t');
 ```
 
 #### Octave
@@ -399,7 +399,7 @@ packages.
 ### Reading a `.tsv` file:
 
 In this example, we assume the .tsv includes column names (headers), and
-explicitly set column separator (delimitor) to tab ('\t')
+explicitly set column separator (delimiter) to tab ('\t')
 
 ```R
 data = read.table('myFile.tsv', header=TRUE, sep='\t')
