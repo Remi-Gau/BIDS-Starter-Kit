@@ -1,0 +1,13 @@
+{
+    "ignorePatterns": [
+        {
+            "pattern": "^https://docs.github.com/.*"
+        },
+        {
+            "pattern": "^https://guides.github.com/.*"
+        },
+        {
+            "pattern": "^https://github.com/.*"
+        }
+    ]
+}
