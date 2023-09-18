@@ -198,6 +198,23 @@ If you deal with EEG data, you may want to read this
 as well before considering combining recordings acquired on different occasions
 within the same `session` folder.
 
+## General: Is there a machine readable version of the BIDS specification?
+
+Yes. The BIDS specification exist as a schema.
+The BIDS schema is a machine readable representation of the BIDS Standard.
+It is (by and large) the BIDS Specification, but written in a declarative form.
+
+The BIDS schema is available in two machine readable formats:
+
+- as a set of [YAML](https://en.wikipedia.org/wiki/YAML) files in the [BIDS specifiation repository](https://github.com/bids-standard/bids-specification/src/schema)
+- as a [single json file](https://bids-specification.readthedocs.io/en/stable/schema.json)
+
+A light-weight introduction to the schema can be found [here](https://bids-extensions.readthedocs.io/en/latest/schema/).
+
+A full description of the schema can be found on this [website](https://bidsschematools.readthedocs.io/en/latest/?badge=latest)
+where you will also find the documentation for the python package
+to interact with the schema, [bidsschematools](https://pypi.org/project/bidsschematools/).
+
 ## General: Is your data type not covered in the current BIDS specification?
 
 BIDS extensions proposals [(BEPs)](https://bids.neuroimaging.io/get_involved.html#extending-the-bids-specification)
@@ -247,13 +264,10 @@ but this gives a little extra flexibility.
 - BEP035: [Modular extensions for individual participant data mega-analyses with non-compliant derivatives](https://bids.neuroimaging.io/bep035)
 ### metadata
 
-- BEP019: [DICOM Metadata](https://bids.neuroimaging.io/bep019)
 - BEP027: [BIDS Applications 2.0](https://bids.neuroimaging.io/bep027)
 - BEP028: [Provenance](https://bids.neuroimaging.io/bep028)
 - BEP034: [Computational modeling](https://bids.neuroimaging.io/bep034)
 ### file format
-
-- BEP002: [BIDS Models Specification](https://bids.neuroimaging.io/bep002)
 
 ## General: What does [this word] mean?
 

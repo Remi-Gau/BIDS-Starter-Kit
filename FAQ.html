@@ -383,6 +383,11 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#general-is-there-a-machine-readable-version-of-the-bids-specification">
+   General: Is there a machine readable version of the BIDS specification?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#general-is-your-data-type-not-covered-in-the-current-bids-specification">
    General: Is your data type not covered in the current BIDS specification?
   </a>
@@ -508,6 +513,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#general-i-had-to-split-the-testing-of-one-of-my-participants-across-2-days-should-i-use-2-different-session-folders-to-organize-the-data-of-that-participant">
    General: I had to split the testing of one of my participants across 2 days, should I use 2 different session folders to organize the data of that participant?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#general-is-there-a-machine-readable-version-of-the-bids-specification">
+   General: Is there a machine readable version of the BIDS specification?
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -753,6 +763,21 @@ but that are “linked” to one another in a way that make sense to how you wan
 as well before considering combining recordings acquired on different occasions
 within the same <code class="docutils literal notranslate"><span class="pre">session</span></code> folder.</p>
 </div>
+<div class="section" id="general-is-there-a-machine-readable-version-of-the-bids-specification">
+<h2>General: Is there a machine readable version of the BIDS specification?<a class="headerlink" href="#general-is-there-a-machine-readable-version-of-the-bids-specification" title="Permalink to this headline">¶</a></h2>
+<p>Yes. The BIDS specification exist as a schema.
+The BIDS schema is a machine readable representation of the BIDS Standard.
+It is (by and large) the BIDS Specification, but written in a declarative form.</p>
+<p>The BIDS schema is available in two machine readable formats:</p>
+<ul class="simple">
+<li><p>as a set of <a class="reference external" href="https://en.wikipedia.org/wiki/YAML">YAML</a> files in the <a class="reference external" href="https://github.com/bids-standard/bids-specification/src/schema">BIDS specifiation repository</a></p></li>
+<li><p>as a <a class="reference external" href="https://bids-specification.readthedocs.io/en/stable/schema.json">single json file</a></p></li>
+</ul>
+<p>A light-weight introduction to the schema can be found <a class="reference external" href="https://bids-extensions.readthedocs.io/en/latest/schema/">here</a>.</p>
+<p>A full description of the schema can be found on this <a class="reference external" href="https://bidsschematools.readthedocs.io/en/latest/?badge=latest">website</a>
+where you will also find the documentation for the python package
+to interact with the schema, <a class="reference external" href="https://pypi.org/project/bidsschematools/">bidsschematools</a>.</p>
+</div>
 <div class="section" id="general-is-your-data-type-not-covered-in-the-current-bids-specification">
 <h2>General: Is your data type not covered in the current BIDS specification?<a class="headerlink" href="#general-is-your-data-type-not-covered-in-the-current-bids-specification" title="Permalink to this headline">¶</a></h2>
 <p>BIDS extensions proposals <a class="reference external" href="https://bids.neuroimaging.io/get_involved.html#extending-the-bids-specification">(BEPs)</a>
@@ -805,7 +830,6 @@ but this gives a little extra flexibility.</p>
 <div class="section" id="metadata">
 <h3>metadata<a class="headerlink" href="#metadata" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><p>BEP019: <a class="reference external" href="https://bids.neuroimaging.io/bep019">DICOM Metadata</a></p></li>
 <li><p>BEP027: <a class="reference external" href="https://bids.neuroimaging.io/bep027">BIDS Applications 2.0</a></p></li>
 <li><p>BEP028: <a class="reference external" href="https://bids.neuroimaging.io/bep028">Provenance</a></p></li>
 <li><p>BEP034: <a class="reference external" href="https://bids.neuroimaging.io/bep034">Computational modeling</a></p></li>
@@ -813,9 +837,6 @@ but this gives a little extra flexibility.</p>
 </div>
 <div class="section" id="file-format">
 <h3>file format<a class="headerlink" href="#file-format" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p>BEP002: <a class="reference external" href="https://bids.neuroimaging.io/bep002">BIDS Models Specification</a></p></li>
-</ul>
 </div>
 </div>
 <div class="section" id="general-what-does-this-word-mean">
