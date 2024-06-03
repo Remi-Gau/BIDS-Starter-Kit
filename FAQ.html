@@ -14,19 +14,19 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=384b581d" />
@@ -34,16 +34,16 @@
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=87e54e7c" />
     <link rel="stylesheet" type="text/css" href="_static/myfile.css?v=a4f16d0d" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
-  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
 
     <script src="_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=f281be69"></script>
@@ -54,7 +54,7 @@
     <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-VZJHGNQV6D"></script>
     <script>
                 window.dataLayer = window.dataLayer || [];
@@ -89,27 +89,23 @@
 
   
   
-  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -131,8 +127,13 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
     </header>
   
 
@@ -244,7 +245,7 @@
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -253,7 +254,7 @@
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
@@ -450,6 +451,11 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-how-to-import-excel-files-to-tsv-file">General: How to import Excel files to TSV file?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-how-to-specify-the-micro-sign-in-matlab">General: How to specify the micro sign in MATLAB?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-i-had-to-split-the-testing-of-one-of-my-participants-across-2-days-should-i-use-2-different-session-folders-to-organize-the-data-of-that-participant">General: I had to split the testing of one of my participants across 2 days, should I use 2 different session folders to organize the data of that participant?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-i-only-have-nifti-files-and-no-dicom-can-i-still-create-a-bids-dataset">General: I only have nifti files and no dicom. Can I still create a BIDS dataset?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regarding-the-missing-json-files">Regarding the “missing” JSON files</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tips">Tips</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-is-there-a-machine-readable-version-of-the-bids-specification">General: Is there a machine readable version of the BIDS specification?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-is-your-data-type-not-covered-in-the-current-bids-specification">General: Is your data type not covered in the current BIDS specification?</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#raw">raw</a></li>
@@ -646,6 +652,58 @@ but that are “linked” to one another in a way that make sense to how you wan
 as well before considering combining recordings acquired on different occasions
 within the same <code class="docutils literal notranslate"><span class="pre">session</span></code> folder.</p>
 </section>
+<section id="general-i-only-have-nifti-files-and-no-dicom-can-i-still-create-a-bids-dataset">
+<h2>General: I only have nifti files and no dicom. Can I still create a BIDS dataset?<a class="headerlink" href="#general-i-only-have-nifti-files-and-no-dicom-can-i-still-create-a-bids-dataset" title="Link to this heading">#</a></h2>
+<p>In theory yes, but it is possible that you will be missing some metadata that is required by the BIDS specification.</p>
+<p>A couple of BIDS converters can work with nifti files:</p>
+<ul class="simple">
+<li><p>bidscoin</p></li>
+<li><p>bidsme</p></li>
+<li><p>explore asl</p></li>
+<li><p>data2bids</p></li>
+</ul>
+<p>See the list of converters <a class="reference external" href="https://bids.neuroimaging.io/benefits.html#mri-and-pet-converters">here</a>.</p>
+<p><strong>However</strong>…</p>
+<ul class="simple">
+<li><p>They may not work with the datatype you have
+(for example not sure that explore ASL can deal with <code class="docutils literal notranslate"><span class="pre">func</span></code> data).</p></li>
+<li><p>Many of them still expect that you have a json side car for each nifti
+(BIDSme for example - from the top of my head).</p></li>
+<li><p>They may expect a certain input structure to work efficiently,
+so we may have to move files around.</p></li>
+</ul>
+<!-- Not played with it but, from the README, data2bids sounds pretty flexible
+but may require you to play with python and json files for configuration.
+
+https://github.com/SIMEXP/Data2Bids -->
+<section id="regarding-the-missing-json-files">
+<h3>Regarding the “missing” JSON files<a class="headerlink" href="#regarding-the-missing-json-files" title="Link to this heading">#</a></h3>
+<p>Depending on the datatype you are dealing with this can be more of less annoying.</p>
+<p>2 examples:</p>
+<p>For the most typical <code class="docutils literal notranslate"><span class="pre">anat</span></code> files,
+they don’t have any REQUIRED metadata,
+so you could have just the data files without any accompanying JSON.
+If you get into more exotic anat files (like for quantitative MRI)
+then this may become a problem.</p>
+<p>For <code class="docutils literal notranslate"><span class="pre">func</span></code> files you only need <code class="docutils literal notranslate"><span class="pre">TaskName</span></code> and <code class="docutils literal notranslate"><span class="pre">RepetitionTime</span></code>
+and the former you can decide what it is and the latter should be in the Nifti header.
+So you should be OKish there too.</p>
+<p>Obviously you will be missing some metadata that would be required
+for some type of preprocessing (like slice timing info).</p>
+</section>
+<section id="tips">
+<h3>Tips<a class="headerlink" href="#tips" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>If you have the PDF with the details of acquisition sequence or a method section
+from a paper with that data, you could “recover” some extra metadata.</p></li>
+<li><p>SPM dicom import tool usually leaves a couple of metadata in a description field of the nifti header.
+That can be a problem for data anonymisation but may help you in your case if this is the tool that was used.
+See an example <a class="reference external" href="https://github.com/PeerHerholz/BIDSonym/issues/41#issue-768636869">here</a></p></li>
+<li><p>If you have to script tings manually rather than using a converter,
+remember to use pybids <a class="reference external" href="https://bids-standard.github.io/pybids/examples/pybids_tutorial.html#path-construction">path construction tools</a> or the <a class="reference external" href="https://github.com/bids-standard/bids-matlab/blob/master/examples/03_BIDS-Matlab_filenames_and_metadata.ipynb">bids matlab equivalent</a> to make your life easier when constructing bids valid filenames.</p></li>
+</ul>
+</section>
+</section>
 <section id="general-is-there-a-machine-readable-version-of-the-bids-specification">
 <h2>General: Is there a machine readable version of the BIDS specification?<a class="headerlink" href="#general-is-there-a-machine-readable-version-of-the-bids-specification" title="Link to this heading">#</a></h2>
 <p>Yes. The BIDS specification exist as a schema.
@@ -693,6 +751,7 @@ but this gives a little extra flexibility.</p>
 <li><p>BEP038: <a class="reference external" href="https://bids.neuroimaging.io/bep038">Atlases</a></p></li>
 <li><p>BEP039: <a class="reference external" href="https://bids.neuroimaging.io/bep039">Dimensionality reduction-based networks</a></p></li>
 <li><p>BEP040: <a class="reference external" href="https://bids.neuroimaging.io/bep040">Functional Ultrasound (fUS)</a></p></li>
+<li><p>BEP042: <a class="reference external" href="https://bids.neuroimaging.io/bep042">Electromyography (EMG)</a></p></li>
 </ul>
 </section>
 <section id="derivative">
@@ -715,6 +774,7 @@ but this gives a little extra flexibility.</p>
 <ul class="simple">
 <li><p>BEP028: <a class="reference external" href="https://bids.neuroimaging.io/bep028">Provenance</a></p></li>
 <li><p>BEP034: <a class="reference external" href="https://bids.neuroimaging.io/bep034">Computational modeling</a></p></li>
+<li><p>BEP043: <a class="reference external" href="https://bids.neuroimaging.io/bep043">BIDS Term Mapping</a></p></li>
 </ul>
 </section>
 <section id="file-format">
@@ -814,7 +874,7 @@ and follow the examples in the
               
               
               
-                <footer class="prev-next-footer">
+                <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
     <a class="left-prev"
@@ -860,6 +920,11 @@ and follow the examples in the
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-how-to-import-excel-files-to-tsv-file">General: How to import Excel files to TSV file?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-how-to-specify-the-micro-sign-in-matlab">General: How to specify the micro sign in MATLAB?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-i-had-to-split-the-testing-of-one-of-my-participants-across-2-days-should-i-use-2-different-session-folders-to-organize-the-data-of-that-participant">General: I had to split the testing of one of my participants across 2 days, should I use 2 different session folders to organize the data of that participant?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-i-only-have-nifti-files-and-no-dicom-can-i-still-create-a-bids-dataset">General: I only have nifti files and no dicom. Can I still create a BIDS dataset?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regarding-the-missing-json-files">Regarding the “missing” JSON files</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tips">Tips</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-is-there-a-machine-readable-version-of-the-bids-specification">General: Is there a machine readable version of the BIDS specification?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-is-your-data-type-not-covered-in-the-current-bids-specification">General: Is your data type not covered in the current BIDS specification?</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#raw">raw</a></li>
@@ -922,8 +987,8 @@ By The BIDS community
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+  <script src="_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341"></script>
 
   <footer class="bd-footer">
   </footer>
